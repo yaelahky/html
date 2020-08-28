@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cocontainer {
+            display: flex;
+            flex-direction: column;
+            background-color: darkorange;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .scroll {
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            background-color: darkred;
+        }
+        .contents {
+            display: flex;
+            flex: 1 1 0%;
+            flex-direction: column;
+        }
+        body {
+            margin: 0;
+        }
+        div {
+            font-size: x-large;
+        }
+        .footer {
+            background-color: darkorchid;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .header {
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="cocontainer">
+        <div class="header">
+            <div>ini header yang Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ducimus vel quidem optio aut error sequi earum perferendis modi nulla asperiores quae excepturi, nemo vero. Nostrum minus sunt aperiam aspernatur.</div>
+        </div>
+        <!-- ini tempat static height nya -->
+        <div class="scroll contents" style="padding-bottom: 30px;"> 
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIssni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIssni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIssni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIssni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIssni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>cuakzIni konten</div>
+            <div>BAWAAHHH konten</div>
+        </div>
+    </div>
+    <!-- pakai static height supaya bisa di taruh angka pada container ke 2 yg scroll -->
+    <div class="footer">
+        <button>Clock</button>
+    </div>
+</body>
+</html>

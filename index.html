@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+</head>
+
+<body>
+    <menu>
+        <menuitem>Dukungan</menuitem>
+        <menuitem>Kelas</menuitem>
+        <menuitem>FAQ</menuitem>
+        <menuitem>Rekrut Talent</menuitem>
+        <menuitem>Masuk</menuitem>
+        <menuitem>Daftar</menuitem>
+    </menu>
+
+    <div class="container"
+        style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 50px;">
+        <div>
+            <h1>Fullstack Mobile Developer</h1>
+            <div style="display: flex; flex-direction: row;">
+                <ul>
+                    <li>Algoritma</li>
+                    <li>JavaScript</li>
+                    <li>Express.js</li>
+                    <li>Redux</li>
+                    <li>SCRUM</li>
+                </ul>
+                <ul>
+                    <li>Responsive Website</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                    <li>React Native</li>
+                    <li>Real Time Application</li>
+                </ul>
+            </div>
+            <button type="button" onclick="showAlert()">Daftar Sekarang</button>
+        </div>
+        <div>
+            <img class="image"
+                src="https://assets-arkademy-wesbsite.s3-ap-southeast-1.amazonaws.com/Hero/faztrack-hero-img.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <img src="banner2.png" alt="">
+    <h1>Mengerjakan projek bersama dengan teman satu tim</h1>
+    <h2>Bangun projek kalian besama rekan satu tim untuk meningkatkan kerja sama dan kolaborasi antar individu.</h1>
+
+        <h1>Fullstack Mobile Developer</h1>
+        <h2>Berikut ini adalah timeline pembelajaran yang akan diterima setiap minggu dalam kelas :</h2>
+
+        <div id="container-1">
+            <h3 id="nomor-1"></h3>
+            <h3 id="title-1"></h3>
+            <h3 id="deskripsi-1"></h3>
+        </div>
+
+        <div id="container-2">
+            <h3 id="nomor-2"></h3>
+            <h3 id="title-2"></h3>
+            <h3 id="deskripsi-2"></h3>
+        </div>
+
+        <div id="container-3">
+            <h3 id="nomor-3"></h3>
+            <h3 id="title-3"></h3>
+            <h3 id="deskripsi-3"></h3>
+        </div>
+
+        <div id="container-4">
+            <h3 id="nomor-4"></h3>
+            <h3 id="title-4"></h3>
+            <h3 id="deskripsi-4"></h3>
+        </div>
+
+
+        <h2>Siap ubah masa depanmu?</h2>
+        <button type="button">Daftar Sekarang</button>
+        <button class="button-primary">Hubungi Kami</button>
+        <section class="container" style="background-color: darkorange;">
+            <div>hi</div>
+        </section>
+
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(result => {
+                result.map((item, index) => {
+                    setToDOM(item, index)
+                })
+            })
+        
+        function setToDOM(item, index) {
+            document.getElementById(`title-${index+1}`).innerHTML = item.title;
+            document.getElementById(`deskripsi-${index+1}`).innerHTML = item.body;
+            document.getElementById(`nomor-${index+1}`).innerHTML = item.id;
+        }
+
+        // const NEWARRAY = ["Judul 1", "JUDUL 2", "JUDUL3"]
+        // const arrayNomor = ["1-2", "3"]
+        // document.getElementById('title-1').innerHTML = NEWARRAY[0]
+        // document.getElementById('title-2').innerHTML = NEWARRAY[1]
+        // document.getElementById('title-3').innerHTML = NEWARRAY[2]
+
+        // document.getElementById('nomor-1').innerHTML = arrayNomor[0]
+        
+        // if (NEWARRAY[3] === undefined) {
+        //     document.getElementById('container-4').style.display = 'none';
+        // } else {
+        //     document.getElementById('title-4').innerHTML = NEWARRAY[3]
+        // }
+        function showAlert() {
+
+        }
+    </script>
+</body>
+
+</html>
